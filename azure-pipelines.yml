@@ -22,4 +22,3 @@ steps:
     appType: 'webAppLinux'
     appName: 'appdeamatias'
     package: '$(System.DefaultWorkingDirectory)/**/*.zip'
-   

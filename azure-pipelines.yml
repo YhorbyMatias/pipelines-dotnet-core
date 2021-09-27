@@ -20,6 +20,6 @@ steps:
   inputs:
     azureSubscription: 'Visual Studio Enterprise(878fbded-08b2-400d-8154-03aa3cff7081)'
     appType: 'webAppLinux'
-    appName: 'DeAPP'
+    appName: 'appdeamatias'
     package: '$(System.DefaultWorkingDirectory)/**/*.zip'
    

@@ -16,9 +16,8 @@ steps:
 - script: dotnet build --configuration $(buildConfiguration)
   displayName: 'dotnet build $(buildConfiguration)'
 
-- task: AzureWebApp@1
+- task: PublishBuildArtifacts@1
   inputs:
-    azureSubscription: 'Visual Studio Enterprise(878fbded-08b2-400d-8154-03aa3cff7081)'
-    appType: 'webAppLinux'
-    appName: 'appdeamatias'
-    package: '$(System.DefaultWorkingDirectory)/**/*.zip'
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: 'drop'
+    publishLocation: 'Container'
